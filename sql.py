@@ -40,7 +40,7 @@ def index():
 def submit():
     name = request.form['Name']
     email = request.form['Mail']
-    message = request.form['Message']  # Change 'password' to 'message'
+    message = request.form['Message']
     
     # Database connection details
     host = "192.168.87.220"
