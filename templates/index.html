@@ -714,6 +714,16 @@
     <!--=============== MAIN JS ===============-->
     <script src="/static/js/main.js"></script>
 
+    <script>
+        // Check if success is true and display alert
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            alert("Message submitted successfully!");
+            // Remove the success parameter from the URL after showing the alert
+            history.replaceState({}, document.title, window.location.pathname);
+        }
+    </script>
+
 </body>
 
 </html>
